@@ -1,0 +1,117 @@
+.page-wraper{
+    width: 375px;
+    height: 750;
+}
+.background {
+    background-color: hsl(185, 75%, 39%);
+    width: 375px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+.top {
+    position: absolute;
+    bottom: 330px;
+    right: 150px;
+}
+.bottom {
+    position: relative;
+    right: 0;
+    left: 150px;
+    top: 330px;
+}
+.container {
+    position: absolute;
+    top: 160px;
+    left: 555px;
+    width: 330px;
+    height: 370px;
+    background-image: url(bg-pattern-card.svg);
+    background-size: 350px 140px;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+.profile-pic{
+    position: absolute;
+    top: 85px;
+    left: 110px;
+    border: 8px solid white;
+    border-radius: 100%;
+    
+}
+hr {
+    color: hsl(0, 0%, 59%);
+    opacity: 0.6;
+}
+.header {
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 10px;
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.header span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    padding-left: 5px;
+}
+.para {
+    text-align: center;
+    padding-bottom: 20px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 15px;
+}
+.sub-content{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 18px;
+}
+.sub-head {
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.sub-para {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+@media (min-width: 1440px){
+    .page-wraper{
+        width: 1440px;
+        
+    }
+    .background {
+        background-color: hsl(185, 75%, 39%);
+        width: 1440px;
+        height: 100vh;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .top {
+        position: absolute;
+        bottom: 500px;
+        right: 750px;
+        
+    }
+    .bottom {
+        position: relative;
+        right: 0;
+        left: 650px;
+        top: 400px;
+    }
+}
