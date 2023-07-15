@@ -1,18 +1,20 @@
 .page-wraper{
     width: 375px;
     height: 750;
+
 }
 .background {
     background-color: hsl(185, 75%, 39%);
     width: 375px;
     height: 700px;
-    margin: auto;
-    position: relative;
+    position: absolute;
+    left: 478px;
 }
 .top {
     position: absolute;
     bottom: 330px;
     right: 150px;
+    
 }
 .bottom {
     position: relative;
@@ -23,7 +25,7 @@
 .container {
     position: absolute;
     top: 160px;
-    left: 555px;
+    left: 500px;
     width: 330px;
     height: 370px;
     background-image: url(bg-pattern-card.svg);
@@ -100,7 +102,9 @@ hr {
         margin: auto;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        margin: auto;
+        position: fixed;
+        left: 0;
     }
     .top {
         position: absolute;
@@ -113,5 +117,10 @@ hr {
         right: 0;
         left: 650px;
         top: 400px;
+    }
+    .container {
+        position: fixed;
+        top: 260px;
+        left: 500px;
     }
 }
