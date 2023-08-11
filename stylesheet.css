@@ -1,14 +1,20 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
 .page-wraper{
     width: 375px;
-    height: 750;
-
+    height: 700px;
+    position: relative;
 }
 .background {
     background-color: hsl(185, 75%, 39%);
     width: 375px;
-    height: 700px;
+    height: 680px;
     position: absolute;
     left: 478px;
+    overflow: hidden;
 }
 .top {
     position: absolute;
@@ -16,7 +22,7 @@
     right: 150px;
     
 }
-.bottom {
+.bottom { 
     position: relative;
     right: 0;
     left: 150px;
@@ -91,9 +97,15 @@ hr {
 
 
 @media (min-width: 1440px){
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
     .page-wraper{
         width: 1440px;
-        
+        height: 840px;
     }
     .background {
         background-color: hsl(185, 75%, 39%);
@@ -105,8 +117,10 @@ hr {
         margin: auto;
         position: fixed;
         left: 0;
+        overflow: hidden;
     }
     .top {
+        margin: 0;
         position: absolute;
         bottom: 500px;
         right: 750px;
@@ -119,7 +133,7 @@ hr {
         top: 400px;
     }
     .container {
-        position: fixed;
+        position: absolute;
         top: 260px;
         left: 500px;
     }
