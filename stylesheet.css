@@ -97,26 +97,18 @@ hr {
 
 
 @media (min-width: 1440px){
-    body{
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .page-wraper{
-        width: 1440px;
-        height: 840px;
-    }
+  
+    
     .background {
         background-color: hsl(185, 75%, 39%);
         width: 1440px;
         height: 100vh;
         margin: auto;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-        position: fixed;
-        left: 0;
+        position: relative;
         overflow: hidden;
     }
     .top {
@@ -127,14 +119,10 @@ hr {
         
     }
     .bottom {
-        position: relative;
+        position: absolute;
         right: 0;
         left: 650px;
         top: 400px;
     }
-    .container {
-        position: absolute;
-        top: 260px;
-        left: 500px;
-    }
+  
 }
