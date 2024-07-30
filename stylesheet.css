@@ -1,6 +1,14 @@
+.page{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .page-wraper{
     width: 375px;
-    height: 750;
+    height: 750px;
+    position: relative;
 }
 .background {
     background-color: hsl(185, 75%, 39%);
@@ -8,6 +16,7 @@
     height: 700px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 .top {
     position: absolute;
@@ -23,7 +32,7 @@
 .container {
     position: absolute;
     top: 160px;
-    left: 555px;
+    left: 23px;
     width: 330px;
     height: 370px;
     background-image: url(bg-pattern-card.svg);
@@ -89,22 +98,31 @@ hr {
 
 
 @media (min-width: 1440px){
+    .page{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
     .page-wraper{
         width: 1440px;
-        
+        /* height: 100vh; */
+        position: relative;
     }
     .background {
         background-color: hsl(185, 75%, 39%);
         width: 1440px;
-        height: 100vh;
+        /* height: 100vh; */
         margin: auto;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
+        /* justify-content: center;
+        align-items: center; */
+       
     }
     .top {
         position: absolute;
-        bottom: 500px;
+        bottom: 35%;
         right: 750px;
         
     }
@@ -113,5 +131,17 @@ hr {
         right: 0;
         left: 650px;
         top: 400px;
+    }
+    .container {
+        position: absolute;
+        /* top: 160px; */
+        left: 555px !important;
+        /* width: 330px; */
+        /* height: 370px; */
+        /* background-image: url(bg-pattern-card.svg); */
+        background-size: 350px 140px;
+        background-repeat: no-repeat;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
     }
 }
